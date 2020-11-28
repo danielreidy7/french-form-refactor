@@ -1,9 +1,11 @@
 
 $primary: #f2545b;
-$primarydark: #0091ae;
-$secondary: #f2545b;
+$primary-alpha: #f2545c45;
+$secondary: #00a4bd;
+$secondary-alpha: #00a4bd1e;
 $ultra-light: #00a4bd;
 $dark: #33475b;
+$light-gray: #ededed;
 
 
 
@@ -11,7 +13,7 @@ $theme-colors: (
   "primary": $primary, 
   "secondary": $primary, 
   "success": $ultra-light, 
-  "info": #7fd1de, 
+  "info": $ultra-light,
   "danger": $primary,
   "dark": $dark
 );
@@ -21,7 +23,7 @@ $theme-colors: (
 
 body {
   font-family: 'Inconsolata', monospace;
-  color: #33475b;
+  color: $dark;
 }
 
 .main-heading {
@@ -54,7 +56,7 @@ body {
 .list-group-item {
   transition: 0.3s;
   &:hover {
-    background: #ededed;
+    background: $secondary-alpha;
   }
 } 
 
