@@ -1,0 +1,63 @@
+
+$primary: #f2545b;
+$primarydark: #0091ae;
+$secondary: #f2545b;
+$ultra-light: #00a4bd;
+$dark: #33475b;
+
+
+
+$theme-colors: (
+  "primary": $primary, 
+  "secondary": $primary, 
+  "success": $ultra-light, 
+  "info": #7fd1de, 
+  "danger": $primary,
+  "dark": $dark
+);
+
+@import "./bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Inconsolata', monospace;
+  color: #33475b;
+}
+
+.main-heading {
+  background: $primary;
+  color: white;
+}
+
+.bg-coral {
+  background: $ultra-light;
+}
+
+.highlight {
+  background:$primary;
+} 
+
+.accent {
+  background: $ultra-light;
+} 
+
+.form-info {
+  color: rgb(167, 167, 167);
+  font-size: 0.8em;
+}
+
+.permission-icon {
+  color: $primary; 
+  font-size: 3em;
+}
+
+.list-group-item {
+  transition: 0.3s;
+  &:hover {
+    background: #ededed;
+  }
+} 
+
+.footer-link {
+  font-size: 0.8em
+}
