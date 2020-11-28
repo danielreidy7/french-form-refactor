@@ -36,7 +36,8 @@ As I only use this form on mobile I am going to focus on the mobile experience o
 
 ## Issue 1
 
-![Header is too large](https://i.ibb.co/c60Lx6H/media-interieur-gouv-fr-deplacement-covid-19-i-Phone-6-7-8-1.png)
+![Header is too large](https://i.ibb.co/8dBFvKn/media-interieur-gouv-fr-deplacement-covid-19-i-Phone-6-7-8-1.png)
+
 As you can see in the screenshot, when the pages loads the header and basic information takes up half the page.
 For me, we are losing valueable real-estate to information that will only ever be useful on the first render of the form to a user.
 So let's clean up that header.
