@@ -2,19 +2,36 @@
 }
 
 .main-heading {
-  background-color: #030390;
+  background: #030390;
   color: white;
 }
 
 .highlight {
-  background-color: #e1000f;
+  background: #e1000f;
 }
 
 .accent {
-  background-color: #030390;
+  background: #030390;
 }
 
 .form-info {
   color: rgb(167, 167, 167);
+  font-size: 0.8em;
+}
+
+.permission-icon {
+  color: #030390;
+  font-size: 3em;
+}
+
+.list-group-item {
+  transition: 0.3s;
+}
+
+.list-group-item:hover {
+  background: #ededed;
+}
+
+.footer-link {
   font-size: 0.8em;
 }
