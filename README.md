@@ -27,3 +27,16 @@ I built the form(which is non-fucntional redesign) using the following:
 - Bootstrap 4
 - Flexbox
 - Some vanilla JS
+
+### Criteria
+
+As I only use this form on mobile I am going to focus on the mobile experience of the site.
+
+# Current issues (as i see them.)
+
+## Issue 1
+
+![Header is too large](https://ibb.co/x1WH310)
+As you can see in the screenshot, when the pages loads the header and basic information takes up half the page.
+For me, we are losing valueable real-estate to information that will only ever be useful on the first render of the form to a user.
+So let's clean up that header.
