@@ -25,8 +25,8 @@ Make the form more efficient and intuitive. Fix some design flaws in the origina
 I built the form(which is non-fucntional redesign) using the following:
 
 - Bootstrap 4
-- Font Awesome ICONS
-- Some vanilla JS
+- Font Awesome Icons
+- 3 lines of JQuery :wink:
 - HTML
 - CSS
 

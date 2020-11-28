@@ -8267,15 +8267,16 @@ body {
   font-size: 3em;
 }
 
-.list-group-item {
-  transition: 0.3s;
-}
-.list-group-item:hover {
-  background: #00a4bd1e;
-}
-
 .footer-link {
   font-size: 0.8em;
+}
+
+.main-checkbox {
+  display: none;
+}
+
+.checked {
+  background: #00a4bd1e;
 }
 
 /*# sourceMappingURL=main.css.map */

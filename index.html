@@ -49,7 +49,9 @@
               >
                 <div class="row">
                   <div class="col-10">
-                    <div class="accordion-button-text"><strong>COVID-19</strong> Attestation de déplacement</div>
+                    <div class="accordion-button-text">
+                      <strong>COVID-19</strong> Attestation de déplacement
+                    </div>
                   </div>
                   <div class="col-2">
                     <div class="accordion-button-icon">
@@ -162,117 +164,117 @@
       </div>
 
       <!-- Reason for permission inputs  -->
-      <label class="form-info">Motif de déplacement</label>
+      <p class="form-info">Motif de déplacement</p>
       <div class="card">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center">
                 <i class="fas fa-briefcase permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements entre le domicile et le lieu de travail.
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center">
                 <i class="fas fa-baby permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements pour chercher les enfants à l’école
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center">
                 <i class="fas fa-running permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements en plein air sans changement de résidence
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center">
                 <i class="fas fa-pray permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements pour se rendre dans un établissement culturel
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center text-center">
                 <i class="fas fa-clinic-medical permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Consultations, examens, soins et l’achat de médicaments
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center text-center">
                 <i class="fas fa-life-ring permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements pour motif familial impérieux
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center text-center">
                 <i class="fas fa-wheelchair permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Déplacements des personnes en situation de handicap
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" onClick="checker(this)">
             <div class="row">
               <div class="col-2 text-center text-center">
                 <i class="fas fa-balance-scale-right permission-icon"></i>
               </div>
               <div class="col-10">
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <p class="form-check-label">
                     Convocations judiciaires ou administratives
-                  </label>
+                  </p>
                 </div>
               </div>
             </div>
@@ -286,7 +288,7 @@
         <div class="row">
           <div class="col-12 py-1 d-flex justify-content-center">
             <button class="btn btn-lg btn-primary generate-button text-white">
-            Générer mon attestation
+              Générer mon attestation
             </button>
           </div>
           <div class="col-12 py-1 d-flex justify-content-center">
@@ -320,8 +322,7 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="./bootstrap/dist/js/bootstrap.min.js"
-    ></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
