@@ -14,7 +14,7 @@ The form in it's current state is well built. It is user-centric and has been re
 
 ### A worthy challenge
 
-I am currently (today's date: 28/11/2020) building out a portfolio as a Front-end Developer. As I interact with this form multiple times per day, I couldn't help myself from making my own revision.
+> I am currently (today's date: 28/11/2020) building out a portfolio as a Front-end Developer. As I interact with this form multiple times per day, I couldn't help myself from making my own revision.
 
 ### Goal for the project :
 
@@ -36,7 +36,7 @@ As I only use this form on mobile I am going to focus on the mobile experience o
 
 ## Issue 1
 
-![Header is too large](https://ibb.co/x1WH310)
+![Header is too large](https://i.ibb.co/c60Lx6H/media-interieur-gouv-fr-deplacement-covid-19-i-Phone-6-7-8-1.png)
 As you can see in the screenshot, when the pages loads the header and basic information takes up half the page.
 For me, we are losing valueable real-estate to information that will only ever be useful on the first render of the form to a user.
 So let's clean up that header.
