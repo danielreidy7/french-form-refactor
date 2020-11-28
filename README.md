@@ -25,6 +25,7 @@ Make the form more efficient and intuitive. Fix some design flaws in the origina
 I built the form(which is non-fucntional redesign) using the following:
 
 - Bootstrap 4
+- Font Awesome ICONS
 - Flexbox
 - Some vanilla JS
 
@@ -38,6 +39,6 @@ As I only use this form on mobile I am going to focus on the mobile experience o
 
 ![Header is too large](https://i.ibb.co/8dBFvKn/media-interieur-gouv-fr-deplacement-covid-19-i-Phone-6-7-8-1.png)
 
-As you can see in the screenshot, when the pages loads the header and basic information takes up half the page.
+As you can see in the above screenshot, the header and basic information take up half the viewport.
 For me, we are losing valueable real-estate to information that will only ever be useful on the first render of the form to a user.
 So let's clean up that header.

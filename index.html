@@ -15,11 +15,201 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/c01491f793.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>French Gov. Permission form REFACTOR</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <!-- Content here -->
+      <header>
+        <nav class="navbar navbar-light bg-white">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/logo-part-1.png"
+              height="40"
+              class="d-inline-block align-bottom"
+              alt=""
+            />
+            <img
+              src="./img/logo-part-2.png"
+              height="25"
+              class="d-inline-block align-bottom"
+              alt=""
+            />
+          </a>
+          <span class="navbar-text"></span>
+        </nav>
+      </header>
+
+      <!-- Main information heading -->
+      <div id="accordion">
+        <div class="card">
+          <div class="main-heading" id="headingOne">
+            <h5 class="mb-0 d-inline-flex">
+              <button
+                class="btn text-white"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+              >
+                <strong>COVID-19</strong> Attestation de déplacement
+              </button>
+            </h5>
+            <div class="d-inline-flex justify-content-end">
+              <i class="far fa-question-circle"></i>
+            </div>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              En application du décret n°2020-1310 du 29 octobre 2020
+              prescrivant les mesures générales nécessaires pour faire face à
+              l'épidémie de Covid19 dans le cadre de l'état d'urgence sanitaire.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- Small info about the form -->
+      <p class="form-info">
+        Remplissez en ligne votre déclaration ci-dessous <br />
+        * Tous les champs sont obligatoires.
+      </p>
+
+      <!-- The permission form -->
+
+      <!-- Name input -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Nom</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Jean Dupont"
+          required
+        />
+      </div>
+
+      <!-- DOB input -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">DDN</span>
+        </div>
+        <input
+          type="date"
+          class="form-control"
+          placeholder="mm/dd/yyyy"
+          required
+        />
+      </div>
+
+      <!-- Place of Birth input  -->
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id=""
+          placeholder="Lieu de naissance"
+        />
+      </div>
+
+      <hr />
+
+      <!-- Address input -->
+      <label class="form-info">Adresse actuelle</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            ><i class="fas fa-map-marked-alt"></i
+          ></span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="55 r Faubourg St Honoré, 75008 PARIS"
+        />
+      </div>
+
+      <!-- Permission date input -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Sortie</span>
+        </div>
+        <input
+          type="date"
+          class="form-control"
+          placeholder="mm/dd/yyyy"
+          required
+        />
+      </div>
+
+      <!-- Permission Time input -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            ><i class="far fa-clock"></i
+          ></span>
+        </div>
+        <input type="text" class="form-control" placeholder="12:00" required />
+      </div>
+
+      <!-- Reason for permission inputs  -->
+      <label class="form-info">Motif de déplacement</label>
+      <div class="row">
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Travail </label>
+          </div>
+        </div>
+
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Enfants </label>
+          </div>
+        </div>
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Sport </label>
+          </div>
+        </div>
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Culturel </label>
+          </div>
+        </div>
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Medical </label>
+          </div>
+        </div>
+        <div class="col xs-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" />
+            <label class="form-check-label"> Mission</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of container -->
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
