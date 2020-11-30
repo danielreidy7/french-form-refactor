@@ -7,13 +7,15 @@ Each form is timestamped and so needs to be refilled for each new reason for lea
 Needless to say I USE THIS FORM A LOT !!!
 
 Voila, the form in question: https://media.interieur.gouv.fr/deplacement-covid-19/ 
- 
+
 You can see my design here: https://danielreidy7.github.io/french-form-refactor/
 
 #### In the interest of fairness
 
 The form in it's current state is well built. It is user-centric and has been revised multiple times.  
-The main revision was to add the ability to autofill (remember) inputs on your device, this meant only changing the 'reason' and timestamp each time you used the form. Believe me, when they made this update (about a week into the lockdown, and 437 forms filled by me later...) It was a game changer. Honestly I dreaded the form before this, being a developer I just cannot bare repetitive tasks, let alone ones you have to do every single day.
+The main revision(made by the french gov.) was to add the ability to autofill inputs from your device, this meant only changing the 'reason' and timestamp each time you used the form. 
+When they made this update (about a week into the lockdown, and 437 forms filled by me later...) It was a game changer. 
+Honestly I dreaded the form before this, being a developer I just cannot bare repetitive tasks, let alone ones you have to do every single day.
 
 ### A worthy challenge
 
