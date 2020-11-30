@@ -36,9 +36,9 @@ I built the form(which is non-fucntional redesign) using the following:
 
 As I only use this form on mobile I am going to focus on the mobile experience of the site.
 
-# Current issues :suspect:
+# Current issues
 
-#### Header is too large, typography >= :poop:
+#### Header is too large, typography :suspect:
 
 
 original form           |  redesign
