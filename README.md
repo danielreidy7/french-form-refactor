@@ -38,7 +38,7 @@ As I only use this form on mobile I am going to focus on the mobile experience o
 
 ## Issue 1
 
-Solarized dark             |  Solarized Ocean
+Original Form            |  My Redesign
 :-------------------------:|:-------------------------:
 ![](https://i.ibb.co/18djGrz/old-form.png)  |  ![](https://i.ibb.co/gV4Pkg4/new-form.png)
 
