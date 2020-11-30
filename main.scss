@@ -5,7 +5,7 @@ $secondary: #00a4bd;
 $secondary-alpha: #00a4bd1e;
 $ultra-light: #00a4bd;
 $dark: #33475b;
-$light-gray: #ededed;
+$medium-gray: #a4a4a4;
 
 
 
@@ -26,13 +26,14 @@ body {
   color: $dark;
 }
 
+.navbar { 
+  margin: 0;
+  padding: 0;
+ }
+
 .main-heading {
   background: $primary;
   color: white;
-}
-
-.bg-coral {
-  background: $ultra-light;
 }
 
 .highlight {
@@ -44,13 +45,31 @@ body {
 } 
 
 .form-info {
-  color: rgb(167, 167, 167);
+  color: $medium-gray;
   font-size: 0.8em;
+}
+
+.input-title {
+  color: $primary; 
+  font-size: 0.8em;
+  margin-bottom: 0.3em;
+  line-height: normal;
+}
+
+input[type=date] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+}
+
+.container {
+  max-width: 400px;
 }
 
 .permission-icon {
   color: $primary; 
-  font-size: 3em;
+  font-size: 1.8em;
 }
 
 .footer-link {
@@ -62,5 +81,19 @@ body {
 }
 
 .checked {
-  background: $secondary-alpha;
+  background: linear-gradient(-45deg, $primary-alpha, $secondary-alpha);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

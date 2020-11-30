@@ -22,157 +22,124 @@
     <title>French Gov. Permission form REFACTOR</title>
   </head>
   <body>
-    <header>
-      <!-- Simple navabr containing French gov. logo -->
-      <nav class="navbar navbar-light bg-coral">
-        <a class="navbar-brand mx-auto" href="#">
-          <img
-            src="./img/covid.png"
-            height="50"
-            class="d-inline-block align-bottom"
-            alt="Covid icon"
-          />
-        </a>
-        <span class="navbar-text"></span>
-      </nav>
-    </header>
-    <div class="container py-2">
-      <!-- Main information heading accordion -->
-      <div id="accordion">
-        <div class="card">
-          <div class="main-heading" id="headingOne">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-primary text-white d-flex"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-              >
-                <div class="row">
-                  <div class="col-10">
-                    <div class="accordion-button-text">
-                      <strong>COVID-19</strong> Attestation de déplacement
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <div class="accordion-button-icon">
-                      <i class="far fa-question-circle"></i>
-                    </div>
-                  </div>
-                </div>
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseOne"
-            class="collapse"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              En application du décret n°2020-1310 du 29 octobre 2020
-              prescrivant les mesures générales nécessaires pour faire face à
-              l'épidémie de Covid19 dans le cadre de l'état d'urgence sanitaire.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
+    <div class="container py-3">
+      <header>
+        <!-- Simple navabr containing French gov. logo -->
+        <nav class="navbar navbar-light bg-white">
+          <a class="navbar-brand" href="#">
+            <strong>COVID-19</strong> Attestation
+          </a>
+          <span class="navbar-text"></span>
+        </nav>
+      </header>
+    
       <!-- Small info about the form -->
       <p class="form-info">
-        Remplissez votre déclaration ci-dessous: <br />
-        * Tous les champs sont obligatoires.
+        <span class="text-dark">* Tous les champs sont obligatoires.</span><br />
+        Remplissez votre déclaration ci-dessous:
       </p>
 
       <!-- The permission form -->
 
       <!-- Name input -->
+      <p class="input-title">
+        Votre nom:
+      </p>
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Nom</span>
-        </div>
         <input
           type="text"
           class="form-control"
+          name="name"
           placeholder="Jean Dupont"
           required
         />
       </div>
 
       <!-- DOB input -->
+      <p class="input-title">
+        Date de naissance:
+      </p>
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">DDN</span>
-        </div>
         <input
           type="date"
           class="form-control"
-          placeholder="mm/dd/yyyy"
+          name="date_of_birth"
           required
         />
       </div>
 
       <!-- Place of Birth input  -->
+      <p class="input-title">
+        Lieu de naissance:
+      </p>
       <div class="form-group">
         <input
           type="text"
           class="form-control"
-          id=""
-          placeholder="Lieu de naissance"
+          name="lieu_de_naissance"
+          placeholder="Marseille"
+          required
         />
       </div>
 
       <hr />
 
       <!-- Address input -->
-      <label class="form-info">Adresse actuelle</label>
+      <p class="input-title">
+        Adresse actuelle:
+      </p>
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1"
-            ><i class="fas fa-map-marked-alt"></i
-          ></span>
-        </div>
         <input
           type="text"
           class="form-control"
+          name="address"
           placeholder="55 r Faubourg St Honoré, 75008 PARIS"
+          required
         />
       </div>
 
       <!-- Permission date input -->
+      <p class="input-title">
+        Date du sortie:
+      </p>
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Sortie</span>
-        </div>
         <input
           type="date"
           class="form-control"
-          placeholder="mm/dd/yyyy"
+          name="date_of_permission"
+          placeholder="23/12/2020"
           required
         />
       </div>
 
       <!-- Permission Time input -->
+      <p class="input-title">
+        Heure du sortie (HH:MM):
+      </p>
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1"
-            ><i class="far fa-clock"></i
-          ></span>
-        </div>
-        <input type="text" class="form-control" placeholder="12:00" required />
+        <input 
+          type="number" 
+          class="form-control" 
+          name="time_of_permission"
+          placeholder="1200"
+          required
+        />
       </div>
 
+      <hr />
+
       <!-- Reason for permission inputs  -->
-      <p class="form-info">Motif de déplacement</p>
-      <div class="card">
+      <p class="input-title">Motif de déplacement<br />
+        <span class="text-dark">* vous pouvez sélectionner plusieurs options</span>
+      </p>
+      <div class="card options">
         <ul class="list-group list-group-flush">
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-briefcase permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements entre le domicile et le lieu de travail.
@@ -183,10 +150,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-baby permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements pour chercher les enfants à l’école
@@ -197,10 +164,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-running permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements en plein air sans changement de résidence
@@ -211,10 +178,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-pray permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements pour se rendre dans un établissement culturel
@@ -225,10 +192,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-clinic-medical permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Consultations, examens, soins et l’achat de médicaments
@@ -239,10 +206,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-life-ring permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements pour motif familial impérieux
@@ -253,10 +220,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-wheelchair permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Déplacements des personnes en situation de handicap
@@ -267,10 +234,10 @@
           </li>
           <li class="list-group-item" onClick="checker(this)">
             <div class="row">
-              <div class="col-2 text-center text-center">
+              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
                 <i class="fas fa-balance-scale-right permission-icon"></i>
               </div>
-              <div class="col-10">
+              <div class="col-9 pl-0 ml-0">
                 <div class="form-check">
                   <p class="form-check-label">
                     Convocations judiciaires ou administratives
@@ -281,17 +248,16 @@
           </li>
         </ul>
       </div>
-
       <hr />
 
       <div class="pb-2">
         <div class="row">
-          <div class="col-12 py-1 d-flex justify-content-center">
+          <div class="col-12 pt-2 pb-4 d-flex justify-content-start">
             <button class="btn btn-lg btn-primary generate-button text-white">
               Générer mon attestation
             </button>
           </div>
-          <div class="col-12 py-1 d-flex justify-content-center">
+          <div class="col-12 py-1 d-flex justify-content-start">
             <button class="btn btn-xs btn-outline-secondary">
               <i class="fas fa-sync-alt"></i> le formulaire
             </button>
