@@ -17,3 +17,22 @@ const placesAutocomplete = places({
 let checker = (check) => {
   check.classList.toggle("checked");
 };
+
+
+let refresh = () => {
+  // form inputs
+  let inputs = document.getElementById("covid-form").elements;
+
+  // Empty over the form inputs
+  for (let i in inputs) {
+    inputs[i].value = "";
+  };
+
+  // checkboxes
+  let boxes = document.getElementById("options-ul").getElementsByTagName("li");
+
+  // Empty checkboxes
+  for (let b of boxes) {
+    b.classList.remove("checked");
+  };
+};

@@ -29,7 +29,9 @@
           <a class="navbar-brand" href="#">
             <strong>COVID-19</strong> Attestation
           </a>
-          <span class="navbar-text"></span>
+          <span class="navbar-text text-primary" onclick="refresh()">
+            <i class="fas fa-sync"></i>
+          </span>
         </nav>
       </header>
     
@@ -45,208 +47,210 @@
       <p class="input-title">
         Votre nom:
       </p>
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          name="name"
-          placeholder="Jean Dupont"
-          required
-        />
-      </div>
+      <form id="covid-form">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            placeholder="Jean Dupont"
+            required
+          />
+        </div>
 
-      <!-- DOB input -->
-      <p class="input-title">
-        Date de naissance:
-      </p>
-      <div class="input-group mb-3">
-        <input
-          type="date"
-          class="form-control"
-          name="date_of_birth"
-          required
-        />
-      </div>
+        <!-- DOB input -->
+        <p class="input-title">
+          Date de naissance:
+        </p>
+        <div class="input-group mb-3">
+          <input
+            type="date"
+            class="form-control"
+            name="date_of_birth"
+            required
+          />
+        </div>
 
-      <!-- Place of Birth input  -->
-      <p class="input-title">
-        Lieu de naissance:
-      </p>
-      <div class="form-group">
-        <input
-          type="text"
-          class="form-control"
-          name="lieu_de_naissance"
-          placeholder="Marseille"
-          required
-        />
-      </div>
+        <!-- Place of Birth input  -->
+        <p class="input-title">
+          Lieu de naissance:
+        </p>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="lieu_de_naissance"
+            placeholder="Marseille"
+            required
+          />
+        </div>
 
-      <hr />
+        <hr />
 
-      <!-- Address input -->
-      <p class="input-title">
-        Adresse actuelle:
-      </p>
-      <div class="input-group mb-3">
-        <input
-          type="search"
-          class="form-control"
-          name="address"
-          id="address-input"
-          placeholder="50 rue souveraine..."
-          required
-        />
-      </div>
+        <!-- Address input -->
+        <p class="input-title">
+          Adresse actuelle:
+        </p>
+        <div class="input-group mb-3">
+          <input
+            type="search"
+            class="form-control"
+            name="address"
+            id="address-input"
+            placeholder="50 rue souveraine..."
+            required
+          />
+        </div>
 
-      <!-- Permission date input -->
-      <p class="input-title">
-        Date du sortie:
-      </p>
-      <div class="input-group mb-3">
-        <input
-          type="date"
-          class="form-control set-today"
-          name="date_of_permission"
-          required
-        />
-      </div>
+        <!-- Permission date input -->
+        <p class="input-title">
+          Date du sortie:
+        </p>
+        <div class="input-group mb-3">
+          <input
+            type="date"
+            class="form-control set-today"
+            name="date_of_permission"
+            required
+          />
+        </div>
 
-      <!-- Permission Time input -->
-      <p class="input-title">
-        Heure du sortie (HH:MM):
-      </p>
-      <div class="input-group mb-3">
-        <input 
-          type="time" 
-          class="form-control set-now" 
-          name="time_of_permission"
-          required
-        />
-      </div>
+        <!-- Permission Time input -->
+        <p class="input-title">
+          Heure du sortie (HH:MM):
+        </p>
+        <div class="input-group mb-3">
+          <input 
+            type="time" 
+            class="form-control set-now" 
+            name="time_of_permission"
+            required
+          />
+        </div>
 
-      <hr />
+        <hr />
 
-      <!-- Reason for permission inputs  -->
-      <p class="input-title">Motif de déplacement<br />
-        <span class="text-dark">* vous pouvez sélectionner plusieurs options</span>
-      </p>
-      <div class="card options">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-briefcase permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements entre le domicile et le lieu de travail.
-                  </p>
+        <!-- Reason for permission inputs  -->
+        <p class="input-title">Motif de déplacement<br />
+          <span class="text-dark">* vous pouvez sélectionner plusieurs options</span>
+        </p>
+        <div class="card options">
+          <ul class="list-group list-group-flush" id="options-ul">
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-briefcase permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements entre le domicile et le lieu de travail.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-baby permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements pour chercher les enfants à l’école
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-baby permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements pour chercher les enfants à l’école
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-running permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements en plein air sans changement de résidence
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-running permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements en plein air sans changement de résidence
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-pray permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements pour se rendre dans un établissement culturel
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-pray permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements pour se rendre dans un établissement culturel
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-clinic-medical permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Consultations, examens, soins et l’achat de médicaments
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-clinic-medical permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Consultations, examens, soins et l’achat de médicaments
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-life-ring permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements pour motif familial impérieux
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-life-ring permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements pour motif familial impérieux
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-wheelchair permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Déplacements des personnes en situation de handicap
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-wheelchair permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Déplacements des personnes en situation de handicap
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="list-group-item" onClick="checker(this)">
-            <div class="row">
-              <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
-                <i class="fas fa-balance-scale-right permission-icon"></i>
-              </div>
-              <div class="col-9 pl-0 ml-0">
-                <div class="form-check">
-                  <p class="form-check-label">
-                    Convocations judiciaires ou administratives
-                  </p>
+            </li>
+            <li class="list-group-item" onClick="checker(this)">
+              <div class="row">
+                <div class="col-3 m-0 p-0 icon-box d-flex justify-content-center align-items-center">
+                  <i class="fas fa-balance-scale-right permission-icon"></i>
+                </div>
+                <div class="col-9 pl-0 ml-0">
+                  <div class="form-check">
+                    <p class="form-check-label">
+                      Convocations judiciaires ou administratives
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
+      </form>
       <hr />
 
       <div class="pb-2">
@@ -254,11 +258,6 @@
           <div class="col-12 pt-2 pb-4 d-flex justify-content-start">
             <button class="btn btn-lg btn-primary generate-button text-white">
               Générer mon attestation
-            </button>
-          </div>
-          <div class="col-12 py-1 d-flex justify-content-start">
-            <button class="btn btn-xs btn-outline-secondary">
-              <i class="fas fa-sync-alt"></i> le formulaire
             </button>
           </div>
         </div>
