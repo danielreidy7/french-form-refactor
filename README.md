@@ -38,7 +38,9 @@ As I only use this form on mobile I am going to focus on the mobile experience o
 
 ## Issue 1
 
-![Header is too large](https://i.ibb.co/8dBFvKn/media-interieur-gouv-fr-deplacement-covid-19-i-Phone-6-7-8-1.png)
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://i.ibb.co/18djGrz/old-form.png)  |  ![](https://i.ibb.co/gV4Pkg4/new-form.png)
 
 As you can see above, the header and basic information take up half the viewport.
 For me, we are losing valuable real-estate to information that will only ever be useful on the first render of the form to a user.
