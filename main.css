@@ -8270,11 +8270,6 @@ body {
   line-height: normal;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
 .container {
   max-width: 400px;
 }
