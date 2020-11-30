@@ -36,9 +36,9 @@ I built the form(which is non-fucntional redesign) using the following:
 
 As I only use this form on mobile I am going to focus on the mobile experience of the site.
 
-# Current issues
+# UX issues of the Form
 
-#### Header is too large, typography :suspect:
+## Header is too large, typography :suspect:
 
 
 original form           |  redesign
@@ -59,7 +59,7 @@ In my experience anyone who is going to be effected by small typography is alrea
 
 
 
-#### The checkboxes to select the reason for your permission request are overloaded.
+## The checkboxes to select the reason for your permission request are overloaded.
 
 
 original form           |  redesign
@@ -74,3 +74,15 @@ I opted to simplify the reasons and present them like items in an UberEats menu.
 This is a tried and tested method for checkboxes.
 Again a note on accessibility: Yes i have used Icons for this section, but anyone who would struggle with 
 iconography will not be filling out a form on their mobile :nerd_face:.
+
+# Closing thoughts
+
+Enjoyable. Scratched my own itch. 
+
+The whole project took about: 8HRS.
+
+I gained some insight into design critique and of course testing. 
+As with all UX projects this could be refined ad inifitum, but for the time spent working on this, 
+I feel the value added is > the effort to do the refactor.
+
+# :wave:
