@@ -26,17 +26,20 @@ I built the form(which is non-fucntional redesign) using the following:
 
 - Bootstrap 4
 - Font Awesome Icons
-- 3 lines of JQuery :wink:
+- A few lines of JS :wink:
 - HTML
 - CSS
+- SASS
+- Algolia (auto search address)
 
 ### Criteria
 
 As I only use this form on mobile I am going to focus on the mobile experience of the site.
 
-# Current issues (as i see them.)
+# Current issues :suspect:
 
-## Issue 1
+#### Header is too large, typography >= :poop:
+
 
 original form           |  redesign
 :-------------------------:|:-------------------------:
@@ -45,3 +48,29 @@ original form           |  redesign
 As you can see above, the header and basic information take up half the viewport.
 For me, we are losing valuable real-estate to information that will only ever be useful on the first render of the form to a user.
 So let's clean up that header.
+
+I went with a minimal material layout. One line per input. Small titles. 
+
+Note I placed the "refresh form" button in the top right. On the original form this refresh button was at the bottom of the page in an obnoxiously large 
+button. If ever a user would need it, it would be on page load, so we saved some scrolling time here!
+
+A note on typography: Some will argue that having small text will be an accessibility issue.
+In my experience anyone who is going to be effected by small typography is already usign the paper forms.
+
+
+
+#### The checkboxes to select the reason for your permission request are overloaded.
+
+
+original form           |  redesign
+:-------------------------:|:-------------------------:
+![](https://i.ibb.co/KhdRmBv/original-form-2.png)  |  ![](https://i.ibb.co/zsGNFZL/redesign-form-2.png)
+
+In the original form they opted for some heavy text explinations of the reason for the permission request.
+This is useful maybe on the first useage, but made the daily usage of the form a nightmare. Trying to search 
+via scroll on mobile was unnecessarily painful. 
+
+I opted to simplify the reasons and present them like items in an UberEats menu.
+This is a tried and tested method for checkboxes.
+Again a note on accessibility: Yes i have used Icons for this section, but anyone who would struggle with 
+iconography will not be filling out a form on their mobile :nerd_face:.
