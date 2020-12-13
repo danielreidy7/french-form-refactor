@@ -1,6 +1,6 @@
 # A UX experiment to improve the most submitted website form in France.
 
-Since the 29th of October, France has endured it's second COVID-19 nationwide lockdown.
+Since the 29th of October, France has endured it's second COVID-19 nationwide lock-down.
 All members of the public must fill out a permission form (Paper version or an online form that downloads a PDF to your device) in order to leave their home.
 Basically if you need to do something(shopping, go to work, drop the kids to day care, etc.) you are obliged to fill out a form.
 Each form is timestamped and so needs to be refilled for each new reason for leaving your home.
@@ -14,7 +14,7 @@ You can see my design here: https://danielreidy7.github.io/french-form-refactor/
 
 The form in it's current state is well built. It is user-centric and has been revised multiple times.  
 The main revision(made by the french gov.) was to add the ability to autofill inputs from your device, this meant only changing the 'reason' and timestamp each time you used the form. 
-When they made this update (about a week into the lockdown, and 437 forms filled by me later...) It was a game changer. 
+When they made this update (about a week into the lock-down, and 437 forms filled by me later...) It was a game changer. 
 Honestly I dreaded the form before this, being a developer I just cannot bare repetitive tasks, let alone ones you have to do every single day.
 
 ### A worthy challenge
@@ -28,7 +28,7 @@ Make the form more efficient and intuitive. Fix some design flaws in the origina
 
 ### Dependencies
 
-I built the form(which is non-fucntional redesign) using the following:
+I built the form(which is non-functional redesign) using the following:
 
 - Bootstrap 4
 - Font Awesome Icons
@@ -61,7 +61,7 @@ Note I placed the "refresh form" button in the top right. On the original form t
 button. If ever a user would need it, it would be on page load, so we saved some scrolling time here!
 
 A note on typography: Some will argue that having small text will be an accessibility issue.
-In my experience anyone who is going to be effected by small typography is already usign the paper forms.
+In my experience anyone who is going to be effected by small typography is already using the paper forms.
 
 
 
@@ -72,8 +72,8 @@ original form           |  redesign
 :-------------------------:|:-------------------------:
 ![](https://i.ibb.co/KhdRmBv/original-form-2.png)  |  ![](https://i.ibb.co/zsGNFZL/redesign-form-2.png)
 
-In the original form they opted for some heavy text explinations of the reason for the permission request.
-This is useful maybe on the first useage, but made the daily usage of the form a nightmare. Trying to search 
+In the original form they opted for some heavy text explanations of the reason for the permission request.
+This is useful maybe on the first usage, but made the daily usage of the form a nightmare. Trying to search 
 via scroll on mobile was unnecessarily painful. 
 
 I opted to simplify the reasons and present them like items in an UberEats menu.
@@ -88,7 +88,7 @@ Enjoyable. Scratched my own itch.
 The whole project took about: 8HRS.
 
 I gained some insight into design critique and of course testing. 
-As with all UX projects this could be refined ad inifitum, but for the time spent working on this, 
+As with all UX projects this could be refined ad infinitum, but for the time spent working on this, 
 I feel the value added is > the effort to do the refactor.
 
 # :wave:
